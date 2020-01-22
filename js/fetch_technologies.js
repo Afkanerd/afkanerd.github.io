@@ -18,7 +18,7 @@ ajax.onreadystatechange = function () {
 
       var repo_link = document.createElement("a");
       repo_link.setAttribute("style", "cursor: pointer;");
-      repo_link.setAttribute("class", "btn btn-outline-light  lato rounded-pill py-2 px-5 my-3 ");
+      repo_link.setAttribute("class", "btn btn-outline-light  lato rounded py-2 px-4 ");
       repo_link.href = repo.html_url;
       repo_link.appendChild(document.createTextNode("learn more"));
 
