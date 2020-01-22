@@ -1,15 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Play|Rubik&display=swap");
 body {
-  background-image: url("../img/body-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/body-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Rubik", sans-serif;
 }
 
 .bg-image {
-  background-image: url("../img/nav-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/nav-bg.jpg");
   background-size: cover;
 }
 .repo-bg {
-  background-image: url("../img/repo-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/repo-bg.jpg");
   background-size: cover;
   border-radius: 1.5rem !important;
 }
@@ -22,53 +27,13 @@ body {
   font-family: Anurati;
   src: url(../font/Anurati.otf);
 }
-.roboto {
-  font-family: "Roboto", sans-serif;
-}
-.roboto-md {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-}
-.robot-lg {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.5rem;
-}
+
 .lato {
   font-family: "Lato", sans-serif;
 }
-.lato-lg {
-  font-family: "Lato", sans-serif;
-  font-size: 2.5rem;
-}
-.lato-md {
-  font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
-}
-.anton {
-  font-family: "Anton", sans-serif;
-}
-.anton-lg {
-  font-family: "Anton", sans-serif;
-  font-size: 2.5rem;
-}
-.abril {
-  font-family: "Abril Fatface", cursive;
-}
-.abril-md {
-  font-family: "Abril Fatface", cursive;
-  font-size: 1.5rem;
-}
-.abril-lg {
-  font-family: "Abril Fatface", cursive;
-  font-size: 2.5rem;
-}
-.lobster {
-  font-family: "Lobster", cursive;
-}
 
-.lobster-lg {
-  font-family: "Lobster", cursive;
-  font-size: 2.5rem;
+.bowlby {
+  font-family: "Bowlby One SC", cursive;
 }
 
 .logo {
@@ -78,8 +43,8 @@ body {
 .logo:hover {
   color: red;
 }
-.logo-lg {
-  width: 230px;
+.logo-xs-sm {
+  width: 180px;
   height: 30px;
 }
 
@@ -89,29 +54,11 @@ body {
   margin-left: 5px;
 }
 
-.VT323 {
-  font-family: "VT323", monospace;
-}
-
-.intro {
-  font-size: 20px;
-  color: black;
-}
-.bigger {
-  font-size: 18px;
-}
-
 a,
 a:hover,
 a:visited,
 a:focus {
   text-decoration: none;
-}
-
-.caption {
-  height: 450px;
-  padding: 100px 0 100px 0;
-  margin: 10px;
 }
 
 .icon {
@@ -134,6 +81,8 @@ footer p a:hover {
 
 .nav-link {
   color: white !important;
+  font-family: "Play", sans-serif;
+  font-size: 16px;
 }
 
 .nav-link:hover {
@@ -181,7 +130,21 @@ footer p a:hover {
   height: 250px;
 }
 
-.font-lg {
-  font-size: 4em;
+.rounded {
+  border-radius: 10px !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Bowlby One SC", cursive;
 }
 /* animations */

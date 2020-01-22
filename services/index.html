@@ -26,86 +26,134 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-  <link rel="icon" href="../img/logo.png" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="../img/logo.png" />
   <link href="../css/style.css" rel="stylesheet" />
-  <title>Technologies - Afkanerd.com</title>
+
+  <title>Home - Afkanerd.com</title>
 </head>
 
-<body class="text-justify">
-  <div class="bg-image">
-    <nav class="navbar navbar-expand-lg navbar-light  transparent col px-5  py-4 w-100 ">
-      <a class=" navbar-brand " href="../"><img class="logo-sm" src="../img/logo.png"></a>
+<body class="text-justify text-light">
 
-      <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class=" btn btn-outline-light  rounded my-3"><span class=" h3 mr-3">Menu</span><i
-            class="material-icons">apps</i></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end py-2" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item  mx-2 ">
-            <a class="nav-link py-4" href="../">Home</a>
-          </li>
-          <li class="nav-item mx-2 ">
-            <a class="nav-link py-4 border-bottom border-light active" href="">Technologies<span
-                class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item mx-2 ">
-            <a class="nav-link py-4 " href="../services">Services</a>
-          </li>
-          <li class="nav-item mx-2 ">
-            <a class="nav-link py-4" href="../contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <section class="">
 
-    <div class="text-center py-5 my-5">
+    <div class="bg-image">
 
-      <p class="VT323 text-light font-lg">Technologies</p>
-      <h5><kbd class="transparent font-weight-bold text-light"><a class="text-danger"
-            href="https://github.com/torvalds/linux">Linux</a>
-          | <a class="text-danger" href="https://jsoup.org/">Jsoup</a> | <a class="text-danger"
-            href="https://github.com/tensorflow/tensorflow">Tensorflow</a> | <a class="text-danger"
-            href="https://android-review.googlesource.com/q/status:open">Android</a></kbd></h5><br>
-    </div>
-  </div>
+      <nav class="navbar navbar-expand-lg navbar-light  transparent col px-5  py-4 w-100 mb-5">
+        <a class=" navbar-brand " href="../"><img class="logo-sm" src="../img/logo.png"></a>
 
-  </div>
-  </div>
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=" btn btn-outline-light  rounded my-3"><span class=" h3 mr-3">Menu</span><i
+              class="material-icons">apps</i></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end py-2" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item  mx-2">
+              <a class="nav-link py-4 " href="../">Home</a>
+            </li>
+            <li class="nav-item mx-2 ">
+              <a class="nav-link py-4" href="../technologies">Technologies</a>
+            </li>
+            <li class="nav-item mx-2 active">
+              <a class="nav-link py-4 border-bottom border-light" href="">Services<span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-2 ">
+              <a class="nav-link py-4" href="../contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-
-  <section>
-    <div class="container my-5">
-      <div class="row text-center mb-5">
-        <div class="row mb-5">
+      <div class="container-fluid p-5">
+        <div class="row my-5 ">
           <div class="col-md-12">
-            <p class="bigger text-light lato p-2">Who best to make tools for hackers, programmers and those who
-              make; than
-              hackers, programmers and makers! We are constantly contributing codes to tools because it solves
-              problems for us and we can see it solving it for others. All this tools have already been implemented
-              in
-              a real situation and it's currently serving some purpose. Feel free to fork, contribute more and make
-              them better! Build awesome things around them and help us write documentations.</p>
+            <h1 class=" VT323 text-center p-5">WHAT WE DO</h1>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-12 lato">
-            <h2 class="text-center text-light">programming toolkits and Operating System API projects</h2>
+    <!-- services -->
+    <div class="container-fluid mt-5 bg-black p-5" id="services" name="services">
+
+
+      <div class="row my-5">
+
+        <div class="col-md-4">
+          <div class="card transparent">
+            <img class="services-img " src="../img/app_dev.jpg">
+            <div class="card-body">
+              <div class="card-text text-center">
+                <h5 class="p-5">App Development</h5>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="row mb-5" id="main_body"></div>
+        <div class="col-md-4">
+          <div class="card transparent">
+            <img class="services-img " src="../img/system_administrator.jpg">
+            <div class="card-body">
+              <div class="card-text text-center">
+                <h5 class="p-5">System Administration</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card transparent">
+            <img class="services-img " src="../img/webdev-hiclipart.com.png">
+            <div class="card-body">
+              <div class="card-text text-center">
+                <h5 class="p-5">Web Development</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card transparent">
+            <img class="services-img " src="../img/ml.jpeg">
+            <div class="card-body">
+              <div class="card-text text-center">
+                <h5 class="p-5">Machine Learning</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card transparent">
+            <img class="services-img " src="../img/work.png">
+            <div class="card-body">
+              <div class="card-text text-center">
+                <h5 class="p-5">Internships</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card transparent">
+            <img class="services-img " src="../img/aurora-desktop.png">
+            <div class="card-body">
+              <div class="card-text text-center">
+                <h5 class="p-5">Tech Support</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+    </div>
 
   </section>
 
   <!-- Footer -->
-
   <footer class="p-5 bg-black ">
 
     <!-- Footer Links -->
@@ -114,11 +162,11 @@
       <div class="row mt-3">
 
         <div class="col-md-3 mb-5 px-1">
-          <h6 class="mb-5"><a class="" href=""><img class="logo-xs-sm" src="../img/logo.png"></a></h6>
+          <h6 class="mb-5"><a class="" href="../"><img class="logo-xs-sm" src="../img/logo.png"></a></h6>
 
           <p><a class="" href="../">Home</a></p>
-          <p><a class="" href="">Technologies</a></p>
-          <p><a class="" href="../services">Services</a></p>
+          <p><a class="" href="../technologies">Technologies</a></p>
+          <p><a class="" href="">Services</a></p>
         </div>
 
         <div class="col-md-3 mb-5 px-1">
@@ -176,7 +224,7 @@
           </a>
           <!--youtube-->
           <a href="https://www.youtube.com/channel/UC-RqGnojXRO2zzNYYIAJwaw/featured?view_as=subscriber" class=" ins-ic
-              mr-1">
+            mr-1">
             <img class="icon" src="../img/icons/youtube-variation.png">
           </a>
 
@@ -188,16 +236,11 @@
 
     <div class="footer-copyright text-center py-3">&copy
       <span id="date"></span>
-      <a class="logo" href="">AFKANERD</a>
+      <a class="logo" href="../">AFKANERD</a>
     </div>
 
   </footer>
 
-  <!-- Footer -->
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -207,9 +250,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 
-  <script src='../js/fetch_technologies.js'></script>
-  <script src="../js/main.js"></script>
 </body>
 
 </html>
