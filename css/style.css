@@ -156,3 +156,14 @@ h6,
   font-family: "Bowlby One SC", cursive;
 }
 /* ---- particles.js container ---- */
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden !important;
+}
+
+header {
+  height: 100vh !important;
+  overflow: hidden !important;
+}
