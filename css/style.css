@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Play|Rubik&display=swap");
+
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/body-bg.jpg");
   font-family: "Rubik", sans-serif;
 }
 
+/*
 .bg-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/");
   background-size: cover;
-}
+} */
+
 .repo-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/repo-bg.jpg");
@@ -22,6 +23,7 @@ body {
 .transparent {
   background: transparent;
 }
+
 /* fonts classes */
 @font-face {
   font-family: Anurati;
@@ -153,4 +155,4 @@ h6,
 .h6 {
   font-family: "Bowlby One SC", cursive;
 }
-/* animations */
+/* ---- particles.js container ---- */
