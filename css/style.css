@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Play|Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Raleway&display=swap");
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans";
 }
 
 /*
@@ -30,12 +31,14 @@ body {
   src: url(../font/Anurati.otf);
 }
 
-.lato {
-  font-family: "Lato", sans-serif;
-}
-
 .bowlby {
   font-family: "Bowlby One SC", cursive;
+}
+.poppins {
+  font-family: "Poppins";
+}
+.raleway {
+  font-family: "Raleway";
 }
 
 .logo {
@@ -146,14 +149,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: "Bowlby One SC", cursive;
+h6 {
+  font-family: "Raleway";
 }
 /* ---- particles.js container ---- */
 
@@ -161,6 +158,12 @@ h6,
   width: 100%;
   height: 100vh;
   overflow: hidden !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/header_bg.jpg");
+
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 header {

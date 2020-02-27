@@ -5,6 +5,44 @@ particlesJS.load('particles-js', 'assets/particlesjs-config.json', function () {
 });
 
 
+/* jquery roadmap */
+$(document).ready(function () {
+
+  var events = [
+    {
+      date: 'Q1 - 2018',
+      content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+    },
+    {
+      date: 'Q2 - 2018',
+      content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+    },
+    {
+      date: 'Q3 - 2018',
+      content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+    },
+    {
+      date: 'Q4 - 2018',
+      content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+    },
+    {
+      date: 'Q1 - 2019',
+      content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+    },
+    {
+      date: 'Q1 - 2019',
+      content: 'Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>'
+    },
+  ];
+
+  $('#my-timeline').roadmap(events, {
+    eventsPerSlide: 6,
+    slide: 1,
+    prevArrow: '<i class="material-icons">keyboard_arrow_left</i>',
+    nextArrow: '<i class="material-icons">keyboard_arrow_right</i>'
+  });
+});
+
 //footer date placement
 var date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear() + " ";
