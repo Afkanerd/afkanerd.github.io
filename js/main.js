@@ -41,6 +41,27 @@ $(document).ready(function () {
     prevArrow: '<i class="material-icons">keyboard_arrow_left</i>',
     nextArrow: '<i class="material-icons">keyboard_arrow_right</i>'
   });
+
+  /* toggle view for each team member */
+  $(".team-1-cbd").hover(function () {
+    $(".team-1-default").toggleClass("d-none");
+    $(".team-1-show").toggleClass("d-none")
+  });
+
+  $(".team-2-cbd").hover(function () {
+    $(".team-2-default").toggleClass("d-none");
+    $(".team-2-show").toggleClass("d-none")
+  });
+
+  $(".team-3-cbd").hover(function () {
+    $(".team-3-default").toggleClass("d-none");
+    $(".team-3-show").toggleClass("d-none")
+  });
+
+  $(".team-4-cbd").hover(function () {
+    $(".team-4-default").toggleClass("d-none");
+    $(".team-4-show").toggleClass("d-none")
+  });
 });
 
 //footer date placement
