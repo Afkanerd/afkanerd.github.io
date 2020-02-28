@@ -205,9 +205,22 @@ header {
 
 /*team members card style */
 
-.card-body:hover {
-  background-color: dodgerblue !important;
+.bg-gradient {
+  background-image: linear-gradient(to top, #005bea 0%, #00c6fb 100%);
   color: white !important;
 }
 
+.zoom {
+  transition: transform 0.2s;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+
+  z-index: 1;
+}
 /* team members card style */
