@@ -160,8 +160,8 @@ h6 {
     url("../img/header_bg.jpg");
 
   background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 header {
@@ -204,7 +204,6 @@ header {
 /* phone iframe css */
 
 /*team members card style */
-
 .bg-gradient {
   background-image: linear-gradient(to top, #005bea 0%, #00c6fb 100%);
   color: white !important;
@@ -220,7 +219,7 @@ header {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.1);
-
   z-index: 1;
+  box-shadow: 0px 0px 100px #000000;
 }
 /* team members card style */

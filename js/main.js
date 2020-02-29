@@ -66,6 +66,18 @@ $(document).ready(function () {
     $(".team-4-default").toggleClass("d-none");
     $(".team-4-show").toggleClass("d-none")
   });
+
+  /* toggle plan slider and cards */
+
+  $(".btn-1").click(function () {
+    $(this).toggleClass("btn-primary active");
+    $(".btn-2").toggleClass("btn-primary active")
+  });
+
+  $(".btn-2").click(function () {
+    $(this).toggleClass("btn-primary active");
+    $(".btn-1").toggleClass("btn-primary active")
+  });
 });
 
 //footer date placement
