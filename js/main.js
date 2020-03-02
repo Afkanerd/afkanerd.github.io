@@ -129,10 +129,36 @@ $(document).ready(function () {
     infinite: true,
     speed: 300,
     slidesToShow: 1,
+    cssEase: 'ease',
     adaptiveHeight: true,
     nextArrow: '<span class="slick-next"><i class="fas fa-chevron-right bg-primary text-light p-2 rounded-circle"></i></span>',
-    prevArrow: '<span class="slick-next"><i class="fas fa-chevron-left bg-primary text-light p-2 rounded-circle"></i></span>'
+    prevArrow: '<span class="slick-prev"><i class="fas fa-chevron-left bg-primary text-light p-2 rounded-circle"></i></span>'
   });
+
+
+  /* floating profile photo  carousel */
+  $('.one-time-img').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: false,
+    easing: 'linear'
+
+  });
+
+
+  /* sync both carousels */
+  $('.slick-next').on('click', function (e) {
+    $(".one-time-img").slick('slickNext');
+
+  });
+
+  $('.slick-prev').on('click', function (e) {
+    $(".one-time-img").slick('slickPrev');
+  });
+
 
 });
 
