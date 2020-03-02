@@ -1,25 +1,27 @@
 # Afkanerd website
 
-**Tools used**
+## Components
 
-## frameworks
+**frameworks**
 
 [Bootstrap](https://getbootstrap.com/)
 
-## icons
+**icons**
 
 [Material design icons](https://google.github.io/material-design-icons/)
+
 [Somacro](https://www.deviantart.com/vervex/art/Somacro-45-300DPI-Social-Media-Icons-267955425)
 
-## Animations
-
+**Animations**
+[particle.js](https://vincentgarreau.com/particles.js/)
 [Animate.css](https://github.com/daneden/animate.css)
+
 [Codesdope](codesdope.com/blog/article/12-creative-css-and-javascript-text-typing-animati/)
 
-## Fonts
+**Fonts**
 
 [Google Fonts](https://fonts.google.com)
 
-## Photos
+**Photos**
 
 [pixabay](https://pixabay.com)

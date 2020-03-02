@@ -82,6 +82,7 @@ a:focus {
 footer p a {
   color: white !important;
 }
+
 footer p a:hover {
   color: mediumspringgreen !important;
 }
@@ -102,6 +103,7 @@ footer p a:hover {
   box-shadow: none;
 }
 
+/* Material icons responsive font sizes */
 .material-icons.md-18 {
   font-size: 18px;
 }
@@ -114,8 +116,9 @@ footer p a:hover {
 .material-icons.md-48 {
   font-size: 48px;
 }
+/* Material icons responsive font sizes */
 
-/* overide */
+/* override bootstrap classes */
 .btn-outline-danger {
   color: red;
   border-color: red;
@@ -133,15 +136,18 @@ footer p a:hover {
   color: red !important;
 }
 
+.rounded {
+  border-radius: 10px !important;
+}
+
+/* override bootstrap classes */
+
 .services-img {
   width: 100%;
   border-radius: 2rem;
   height: 250px;
 }
 
-.rounded {
-  border-radius: 10px !important;
-}
 h1,
 h2,
 h3,
@@ -150,25 +156,47 @@ h5,
 h6 {
   font-family: "Raleway";
 }
+
 /* ---- particles.js container ---- */
+header {
+  position: relative;
+  height: 100vh !important;
+}
 
 #particles-js {
   width: 100%;
   height: 100vh;
-  overflow: hidden !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/header_bg.jpg");
 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
-header {
-  height: 100vh !important;
-  overflow: hidden !important;
+#header-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 85%;
+  z-index: 1;
 }
 
+#header-text {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  left: 20%;
+  bottom: 20%;
+  padding: 1.5rem 1rem;
+}
 /* Phone iframe css */
 
 /*Basic Phone styling*/
@@ -357,6 +385,21 @@ header {
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 990px) {
+  #header-text {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    left: 10%;
+    bottom: 10%;
+    padding: 1.5rem 1rem;
+  }
+
+  #navbarNav {
+    background: black;
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 1rem;
+  }
+
   .container-1 {
     height: auto;
     position: static;
@@ -390,7 +433,6 @@ header {
   .top-div {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 50%;
   }
