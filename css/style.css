@@ -144,8 +144,13 @@ footer p a:hover {
 }
 
 .text-primary {
-  background: -webkit-linear-gradient(to top, #005bea, #00c6fb);
   background: linear-gradient(to top, #005bea, #00c6fb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-primary:hover {
+  background: linear-gradient(to top, #00c6fb, #005bea);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -246,12 +251,41 @@ header {
 /*Basic Phone styling*/
 
 .phone {
+  position: relative;
   height: 600px;
-  border: 40px solid black;
-  border-width: 55px 7px;
+  width: 300px;
+  margin: 0 auto;
+  border: 5px solid black;
+  border-width: 10px 7px;
   border-radius: 40px;
   overflow: hidden;
   transition: all 0.5s ease;
+}
+.phone-button {
+  text-align: center !important;
+
+  border: 2px solid black;
+  border-radius: 100%;
+  padding: 20px;
+  position: absolute;
+  left: 45%;
+  right: 45%;
+  bottom: 5%;
+}
+.phone-button:hover {
+  cursor: pointer;
+  border: 4px solid black;
+}
+.notch {
+  position: absolute;
+  top: 0;
+  right: 25%;
+  left: 25%;
+  border-radius: 0 0 30px 30px;
+  background: black;
+  padding: 12px;
+  width: 150px;
+  height: 5px;
 }
 
 /*Different Perspectives*/
