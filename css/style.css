@@ -135,9 +135,53 @@ footer p a:hover {
 .text-danger {
   color: red !important;
 }
+.btn-primary {
+  background: linear-gradient(to top, #005bea, #00c6fb);
+  color: white !important;
+}
+.btn-primary:hover {
+  background: linear-gradient(to top, #00c6fb, #005bea);
+}
+
+.text-primary {
+  background: -webkit-linear-gradient(to top, #005bea, #00c6fb);
+  background: linear-gradient(to top, #005bea, #00c6fb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .rounded {
   border-radius: 10px !important;
+}
+/* Gradient buttons */
+.btn-hover {
+  color: #fff !important;
+  cursor: pointer;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to left,
+    #005bea,
+    #00c6fb,
+    #005bea,
+    #00c6fb
+  );
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
 }
 
 /* override bootstrap classes */
@@ -157,7 +201,7 @@ h6 {
   font-family: "Raleway";
 }
 
-/* ---- particles.js container ---- */
+/* ----  header customization ---- */
 header {
   position: relative;
   height: 100vh !important;
@@ -453,4 +497,19 @@ header {
     width: 100%;
     height: 50%;
   }
+}
+
+/* roadmap */
+.circle {
+  color: white;
+  text-align: center !important;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+.circle-hover {
+  background: linear-gradient(to top, #00c6fb, #005bea);
+  border: 0;
 }
