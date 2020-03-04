@@ -42,8 +42,8 @@ $(document).ready(function () {
   /* toggle plan slider and cards */
 
   $(".btn-1").click(function () {
-    $(this).toggleClass("btn-primary active");
-    $(".btn-2").toggleClass("btn-primary active");
+    $(this).toggleClass("btn-primary");
+    $(".btn-2").toggleClass("btn-primary");
     $(".price-1").html("$10");
     $(".price-2").html("$20");
     $(".price-3").html("$50");
@@ -103,8 +103,8 @@ $(document).ready(function () {
     slidesToShow: 1,
     cssEase: 'ease',
     adaptiveHeight: true,
-    nextArrow: '<span class="slick-next"><i class="fas fa-chevron-right bg-primary text-light p-2 rounded-circle"></i></span>',
-    prevArrow: '<span class="slick-prev"><i class="fas fa-chevron-left bg-primary text-light p-2 rounded-circle"></i></span>'
+    nextArrow: '<span class="slick-next"><i class="fas fa-chevron-right bg-gradient text-light p-2 rounded-circle"></i></span>',
+    prevArrow: '<span class="slick-prev"><i class="fas fa-chevron-left bg-gradient text-light p-2 rounded-circle"></i></span>'
   });
 
 
