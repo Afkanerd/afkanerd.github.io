@@ -67,11 +67,13 @@ a:focus {
   width: 30px;
   border-radius: 100%;
 }
+
 .icon-small {
   height: 25px;
   width: 25px;
   border-radius: 100%;
 }
+
 .bg-black {
   background-color: black;
   color: white;
@@ -235,10 +237,10 @@ header {
 
 #header-text {
   position: absolute;
-  top: 20%;
+  top: 25%;
   right: 25%;
   left: 25%;
-  bottom: 20%;
+  bottom: 25%;
   padding: 1.5rem 1rem;
 }
 
@@ -259,10 +261,9 @@ header {
 }
 .phone-button {
   text-align: center !important;
-
   border: 2px solid black;
   border-radius: 100%;
-  padding: 20px;
+  padding: 1.2rem;
   position: absolute;
   left: 45%;
   right: 45%;
@@ -300,7 +301,7 @@ header {
 
 .phone.view_3 {
   transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  box-shadow: 0px 3px 0 #bbb, 0px 4px 0 #bbb, 0px 5px 0 #bbb, 0px 7px 0 #bbb,
+  box-shadow: 0px 3px 0 black, 0px 4px 0 white, 0px 5px 0 white, 0px 9px 0 black,
     0px 10px 20px #666;
 }
 /* phone iframe css */
@@ -448,27 +449,23 @@ header {
 /* pricing section css */
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 990px) {
-  #header-text {
-    position: absolute;
-    top: 20%;
-    right: 10%;
-    left: 10%;
-    bottom: 20%;
-    padding: 1.5rem 1rem;
-  }
-}
 
 @media screen and (max-width: 767px) {
+  .logo-sm {
+    width: 12rem;
+    height: 1.5rem;
+  }
+
   .pricingTable {
     margin-bottom: 50px;
   }
+
   #header-text {
     position: absolute;
-    top: 15%;
+    top: 25%;
     right: 0;
     left: 0;
-    bottom: 15%;
+    bottom: 25;
     padding: 1.5rem 1rem;
   }
 }
@@ -549,7 +546,7 @@ header {
   text-align: center !important;
   border: 1px solid white;
   border-radius: 100%;
-  padding: 1.5rem;
+  padding: 1.4rem 1.6rem;
   font-size: 2rem;
   margin: 0 auto;
 }
