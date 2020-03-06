@@ -46,9 +46,6 @@ body {
   font-family: Anurati;
   color: white;
 }
-.logo:hover {
-  color: mediumspringgreen;
-}
 
 .logo-sm {
   width: 15rem;
@@ -81,10 +78,6 @@ a:focus {
 
 footer p a {
   color: white !important;
-}
-
-footer p a:hover {
-  color: mediumspringgreen !important;
 }
 
 .nav-link {
@@ -147,7 +140,8 @@ footer p a:hover {
 }
 .text-primary:hover,
 .logo:hover,
-.nav-link:hover {
+.nav-link:hover,
+footer p a:hover {
   background: linear-gradient(to top, #00c6fb, #005bea);
   -webkit-background-clip: text;
   background-clip: text;
@@ -465,7 +459,7 @@ header {
     top: 25%;
     right: 0;
     left: 0;
-    bottom: 25;
+    bottom: 25%;
     padding: 1.5rem 1rem;
   }
 }
@@ -489,7 +483,7 @@ header {
   }
 
   .center-div {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     padding: 1.5rem 1rem;
   }

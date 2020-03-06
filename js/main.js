@@ -96,39 +96,56 @@ $(document).ready(function () {
   });
 
   /* floating carousel section animation with slick */
-  $('.one-time').slick({
+  /* floating profile photo  carousel */
+  $('.reviewer-img').slick({
     dots: false,
     infinite: true,
-    speed: 300,
+    speed: 1000,
     slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: false,
+    easing: 'ease',
+    fade: true
+
+  });
+
+  $('.reviewer-info').slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    fade: true,
     cssEase: 'ease',
     adaptiveHeight: true,
     nextArrow: '<span class="slick-next"><i class="fas fa-chevron-right bg-gradient text-light p-2 rounded-circle"></i></span>',
     prevArrow: '<span class="slick-prev"><i class="fas fa-chevron-left bg-gradient text-light p-2 rounded-circle"></i></span>'
   });
 
-
-  /* floating profile photo  carousel */
-  $('.one-time-img').slick({
+  $('.review-text').slick({
     dots: false,
     infinite: true,
-    speed: 300,
+    fade: true,
+    speed: 1000,
     slidesToShow: 1,
     adaptiveHeight: true,
     arrows: false,
-    easing: 'linear'
-
+    easing: 'ease'
   });
 
 
+
+
+
   /* sync both carousels */
-  $('.slick-next').on('click', function (e) {
-    $(".one-time-img").slick('slickNext');
+  $(".slick-next").on('click', function (e) {
+    $(".reviewer-img").slick("slickNext");
+    $(".review-text").slick("slickNext");
 
   });
 
   $('.slick-prev').on('click', function (e) {
-    $(".one-time-img").slick('slickPrev');
+    $(".reviewer-img").slick('slickPrev');
+    $(".review-text").slick("slickPrev");
   });
 
 
