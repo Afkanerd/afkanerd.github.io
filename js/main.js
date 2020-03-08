@@ -10,31 +10,48 @@ $(document).ready(function () {
   /* timeline section js */
 
   $(".timeline-card").on('mouseenter mouseleave', function (e) {
-    $(this).find(".circle").toggleClass('circle-hover');
+    $(this).find(".circle").toggleClass('circle-hover animated bounce ');
+    $(this).find("h6").toggleClass('animated tada slow');
+
   });
   /* timeline section js */
 
+
+  /* number count effect */
+  $('.count').each(function () {
+    $(this).prop('Counter', 0).animate({
+      Counter: $(this).data('value')
+    }, {
+      duration: 10000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(this.Counter.toFixed());
+      }
+    });
+  });
+  /* number count effect */
+
   /* toggle view for each team member */
   $(".team-1").hover(function () {
-    $(".team-1-cbd").toggleClass("bg-gradient");
+    $(".team-1-cbd").toggleClass("bg-gradient animated tada");
     $(".team-1-default").toggleClass("d-none");
     $(".team-1-show").toggleClass("d-none");
   });
 
   $(".team-2").hover(function () {
-    $(".team-2-cbd").toggleClass("bg-gradient");
+    $(".team-2-cbd").toggleClass("bg-gradient animated tada");
     $(".team-2-default").toggleClass("d-none");
     $(".team-2-show").toggleClass("d-none");
   });
 
   $(".team-3").hover(function () {
-    $(".team-3-cbd").toggleClass("bg-gradient");
+    $(".team-3-cbd").toggleClass("bg-gradient animated tada");
     $(".team-3-default").toggleClass("d-none");
     $(".team-3-show").toggleClass("d-none");
   });
 
   $(".team-4").hover(function () {
-    $(".team-4-cbd").toggleClass("bg-gradient");
+    $(".team-4-cbd").toggleClass("bg-gradient animated tada");
     $(".team-4-default").toggleClass("d-none");
     $(".team-4-show").toggleClass("d-none");
   });

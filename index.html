@@ -45,7 +45,6 @@
 
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/slick.css" rel="stylesheet" />
-  <script src="js/animations.js"></script>
   <script src="js/particles.js"></script>
 
 
@@ -92,9 +91,9 @@
 
   </header>
 
-  <div class="container my-5">
+  <div class="container my-5 intro-section ">
     <div class="row p-2 p-lg-5">
-      <div class="col-md-6 col-sm-12 text-center text-sm-left">
+      <div class="col-md-6 col-sm-12 text-center text-sm-left animated fadeInLeft slower">
         <h2>Lets take your <span class="text-primary">Business</span> to the Next Level</h2>
         <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis
           id interdum
@@ -105,7 +104,7 @@
         <a class="btn btn-primary px-4 py-2 rounded-pill ">learn more</a>
       </div>
 
-      <div class="col-md-6 col-sm-12 p-4">
+      <div class="col-md-6 col-sm-12 p-4 animated fadeInRight slow">
         <img src="img/coffee.png" class="img-fluid">
       </div>
     </div>
@@ -200,7 +199,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4 my-5 text-center text-md-right">
+      <div class="col-md-4 my-5 text-center text-md-right animated fadeInLeft slower">
         <div class="p-4 mb-4">
           <i class="fas fa-user-edit fa-3x text-primary"></i>
           <h4 class="text-primary my-4">Theme Options</h4>
@@ -215,7 +214,7 @@
       </div>
 
       <!-- phone canvas-->
-      <div class="col-md-4">
+      <div class="col-md-4 animated fadeInDown slower">
         <div id="carouselExampleControls" class="phone view_3 carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -236,7 +235,7 @@
       </div>
       <!-- phone canvas-->
 
-      <div class="col-md-4 my-5 text-center text-md-left">
+      <div class="col-md-4 my-5 text-center text-md-left animated fadeInRight slower">
         <div class="p-4 mb-4">
           <i class="fas fa-terminal fa-3x text-primary"></i>
           <h4 class="text-primary my-4">code</h4>
@@ -259,7 +258,7 @@
     <!-- blue background slide -->
     <div class="row bg-image text-light text-center p-3 p-lg-5  my-5">
       <div class="col-md-4 my-3">
-        <h1>2010</h1>
+        <h1 class="count" data-value="2010">2010</h1>
         <h4>Since We started</h4>
       </div>
       <div class="col-md-4 my-4">
@@ -267,7 +266,7 @@
           interdum eget elit.</p>
       </div>
       <div class="col-md-4 my-4">
-        <h1>895</h1>
+        <h1 class="count" data-value="895">895</h1>
         <h4>clients</h4>
       </div>
     </div>
@@ -681,6 +680,7 @@
   -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/slick.js"></script>
+  <script src="js/animations.js"></script>
   <script src="js/main.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
