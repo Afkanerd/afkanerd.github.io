@@ -5,17 +5,17 @@ particlesJS.load('particles-js', 'assets/particlesjs-config.json', function () {
 });
 
 
-/* jquery roadmap */
-$(document).ready(function () {
-  /* timeline section js */
 
+
+$(document).ready(function () {
+
+  /* timeline section js */
   $(".timeline-card").on('mouseenter mouseleave', function (e) {
     $(this).find(".circle").toggleClass('circle-hover animated bounce ');
     $(this).find("h6").toggleClass('animated tada slow');
 
   });
   /* timeline section js */
-
 
   /* number count effect */
   $('.count').each(function () {

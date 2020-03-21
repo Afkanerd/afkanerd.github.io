@@ -551,36 +551,49 @@ header {
 
 /* animation section */
 
-.animated-text {
-  border-right: solid 5px limegreen;
-  white-space: nowrap;
-  overflow: hidden;
+/* Cursor */
+.typed-cursor {
+  color: limegreen;
+  font-weight: bold;
+  font-size:2rem;
+  margin-left:0.2rem;
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 
-/* Animation */
-.animated-text {
-  animation: animated-text 4s steps(29, end) 1s 1 normal both,
-    animated-cursor 600ms steps(29, end) infinite;
-}
-
-/* text animation */
-
-@keyframes animated-text {
-  from {
-    width: 0;
+@keyframes blink {
+  0% {
+    opacity: 1;
   }
-  to {
-    width: 472px;
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-/* cursor animations */
-
-@keyframes animated-cursor {
-  from {
-    border-right-color: rgba(0, 255, 0, 0.75);
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
   }
-  to {
-    border-right-color: transparent;
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
