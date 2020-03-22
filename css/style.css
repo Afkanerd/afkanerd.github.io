@@ -19,9 +19,10 @@ body {
   background-size: cover;
   border-radius: 1.5rem !important;
 }
-.dark {
-  opacity: 0.8;
+.darken {
+  filter: brightness(80%);
 }
+
 .transparent {
   background: transparent;
 }
@@ -543,6 +544,11 @@ header {
     left: 0;
     width: 100%;
     height: 50%;
+  }
+
+  .service-img {
+    height: 20rem;
+    width: 450px;
   }
 }
 

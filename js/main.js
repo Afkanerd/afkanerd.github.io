@@ -176,22 +176,17 @@ $(document).ready(function () {
     easing: 'ease'
   });
 
-
-
-
-
   /* sync both carousels */
-  $(".slick-next").on('click', function (e) {
+  $(".reviewer-info > .slick-next").on('click', function (e) {
     $(".reviewer-img").slick("slickNext");
     $(".review-text").slick("slickNext");
 
   });
 
-  $('.slick-prev').on('click', function (e) {
+  $('.reviewer-info > .slick-prev').on('click', function (e) {
     $(".reviewer-img").slick('slickPrev');
     $(".review-text").slick("slickPrev");
   });
-
 
 });
 
