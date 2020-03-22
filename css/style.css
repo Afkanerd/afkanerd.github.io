@@ -237,7 +237,18 @@ header {
   bottom: 25%;
   padding: 1.5rem 1rem;
 }
-
+#scroll-down {
+  cursor: pointer;
+  position: absolute;
+  left: 48%;
+  right: 48%;
+  bottom: 5%;
+  text-align: center !important;
+}
+#scroll-down i:hover {
+  border: none !important;
+  background: linear-gradient(to top, #00c6fb, #005bea);
+}
 /* Phone iframe css */
 
 /*Basic Phone styling*/
@@ -254,6 +265,7 @@ header {
   transition: all 0.5s ease;
 }
 .phone-button {
+  cursor: pointer;
   text-align: center !important;
   border: 2px solid black;
   border-radius: 100%;
@@ -555,8 +567,8 @@ header {
 .typed-cursor {
   color: limegreen;
   font-weight: bold;
-  font-size:2rem;
-  margin-left:0.2rem;
+  font-size: 2rem;
+  margin-left: 0.2rem;
   display: inline;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;

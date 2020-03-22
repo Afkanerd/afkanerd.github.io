@@ -1,6 +1,6 @@
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'assets/particlesjs-config.json', function () {
+particlesJS.load('particles-js', '/assets/particlesjs-config.json', function () {
   console.log('callback - particles.js config loaded');
 });
 
@@ -16,6 +16,33 @@ $(document).ready(function () {
 
   });
   /* timeline section js */
+
+  /* phone display caroussel animation */
+  $('.app-dev').on('mouseenter', function (e) {
+    $(this).find("i").toggleClass('animated flip slower');
+  })
+
+  /* phone display carousel animation */
+
+  /* logo animation */
+
+  $(".logo-sm").on('mouseover', function (e) {
+    $(this).toggleClass('animated flip slower');
+  });
+  /* logo animation end */
+
+  $(".intro-section").on('mouseleave', function (e) {
+    $(this).find(".col-md-6:first").toggleClass('');
+  });
+
+  /*scroll down button */
+  $("#scroll-down").click(function (e) {
+    window.scroll({
+      top: 500,
+      behavior: 'smooth'
+    });
+  })
+  /* logo animation */
 
   /* number count effect */
   $('.count').each(function () {
