@@ -14,7 +14,7 @@ body {
 }
 
 .repo-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("../img/repo-bg.jpg");
   background-size: cover;
   border-radius: 1.5rem !important;
@@ -549,6 +549,10 @@ header {
   .service-img {
     height: 20rem;
     width: 450px;
+  }
+  .tech-card {
+    height: 15rem;
+    width: 30rem;
   }
 }
 

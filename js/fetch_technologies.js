@@ -9,21 +9,21 @@ ajax.onreadystatechange = function () {
       var repo = sr[repo];
 
       var repo_name = document.createElement("h5");
-      repo_name.setAttribute("class", "text-danger roboto");
+      repo_name.setAttribute("class", "text-danger  font-weight-bold");
       repo_name.appendChild(document.createTextNode(`${repo.name} | ${repo.language}`));
 
       var repo_description = document.createElement("p");
-      repo_description.setAttribute("class", "text-light lato py-4");
+      repo_description.setAttribute("class", "text-light py-4");
       repo_description.appendChild(document.createTextNode(repo.description));
 
       var repo_link = document.createElement("a");
       repo_link.setAttribute("style", "cursor: pointer;");
-      repo_link.setAttribute("class", "btn btn-outline-light  lato rounded py-2 px-4 ");
+      repo_link.setAttribute("class", "btn btn-outline-light  py-2 px-4 ");
       repo_link.href = repo.html_url;
       repo_link.appendChild(document.createTextNode("learn more"));
 
       var div = document.createElement("div");
-      div.setAttribute("class", "repo-bg p-3 rounded mb-5 p-2");
+      div.setAttribute("class", "repo-bg p-3 rounded mx-auto mb-5 tech-card");
       div.appendChild(repo_name);
       div.appendChild(repo_description);
       div.appendChild(repo_link);
