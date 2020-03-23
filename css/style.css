@@ -184,12 +184,6 @@ footer p a:hover {
 
 /* override bootstrap classes */
 
-.services-img {
-  width: 100%;
-  border-radius: 2rem;
-  height: 250px;
-}
-
 h1,
 h2,
 h3,
@@ -256,7 +250,7 @@ header {
 
 .phone {
   position: relative;
-  height: 600px;
+  height: 576px;
   width: 300px;
   margin: 0 auto;
   border: 5px solid black;
@@ -547,8 +541,8 @@ header {
   }
 
   .service-img {
-    height: 20rem;
-    width: 450px;
+    height: 15rem;
+    width: 30rem;
   }
   .tech-card {
     height: 15rem;
@@ -618,4 +612,10 @@ header {
   100% {
     opacity: 1;
   }
+}
+
+.app-photo {
+  width: 100% !important;
+  height: 576px !important;
+  margin: 0 auto;
 }

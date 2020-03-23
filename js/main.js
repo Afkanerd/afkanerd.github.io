@@ -60,25 +60,25 @@ $(document).ready(function () {
 
   /* toggle view for each team member */
   $(".team-1").hover(function () {
-    $(".team-1-cbd").toggleClass("bg-gradient animated tada");
+    $(this).toggleClass("animated tada");
     $(".team-1-default").toggleClass("d-none");
     $(".team-1-show").toggleClass("d-none");
   });
 
   $(".team-2").hover(function () {
-    $(".team-2-cbd").toggleClass("bg-gradient animated tada");
+    $(this).toggleClass("animated tada");
     $(".team-2-default").toggleClass("d-none");
     $(".team-2-show").toggleClass("d-none");
   });
 
   $(".team-3").hover(function () {
-    $(".team-3-cbd").toggleClass("bg-gradient animated tada");
+    $(this).toggleClass("animated tada");
     $(".team-3-default").toggleClass("d-none");
     $(".team-3-show").toggleClass("d-none");
   });
 
   $(".team-4").hover(function () {
-    $(".team-4-cbd").toggleClass("bg-gradient animated tada");
+    $(this).toggleClass("animated tada");
     $(".team-4-default").toggleClass("d-none");
     $(".team-4-show").toggleClass("d-none");
   });
