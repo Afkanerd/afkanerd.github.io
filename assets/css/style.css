@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Play|Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap");
+
+body {
+  font-family: "Open Sans";
+}
+
+.bg-image {
+  background-image: url("/assets/images/bg-img-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+.darken {
+  filter: brightness(80%);
+}
+
+.transparent {
+  background: transparent;
+}
+
+.bowlby {
+  font-family: "Bowlby One SC", cursive;
+}
+.poppins {
+  font-family: "Poppins";
+}
+.raleway {
+  font-family: "Raleway";
+}
+.logo {
+  font-family: Anurati;
+  color: white;
+}
+.logo-sm {
+  width: 15rem;
+  height: 1.8rem;
+}
+a,
+a:hover,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+.icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+.icon-small {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+}
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+footer p a {
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Material icons responsive font sizes */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+/* Material icons responsive font sizes */
+
+/* override bootstrap classes */
+
+.btn-primary {
+  background: linear-gradient(to top, #005bea, #00c6fb);
+  color: white !important;
+}
+.btn-primary:hover {
+  background: linear-gradient(to top, #00c6fb, #005bea);
+}
+
+.text-primary:hover,
+.logo:hover,
+footer p a:hover {
+  background: linear-gradient(to top, #00c6fb, #005bea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+/* Gradient buttons */
+.btn-hover {
+  color: #fff !important;
+  cursor: pointer;
+  background-size: 300% 100%;
+  background-image: linear-gradient(to left, #005bea, #00c6fb, #005bea, #00c6fb);
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+/* override bootstrap classes */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+/* ----  header customization ---- */
+header {
+  position: relative;
+  height: 80vh !important;
+}
+
+#particles-js {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1)), url("/assets/images/bg-img-1.png");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#header-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#header-text {
+  position: absolute;
+  top: 25%;
+  right: 25%;
+  left: 25%;
+  bottom: 25%;
+  padding: 1.5rem 1rem;
+}
+#scroll-down {
+  cursor: pointer;
+  position: absolute;
+  left: 48%;
+  right: 48%;
+  bottom: 5%;
+  text-align: center !important;
+}
+#scroll-down i:hover {
+  border: none !important;
+  background: linear-gradient(to top, #00c6fb, #005bea);
+}
+
+@media screen and (max-width: 767px) {
+  .logo-sm {
+    width: 12rem;
+    height: 1.5rem;
+  }
+
+  #header-text {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+    bottom: 25%;
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 990px) {
+  #navbarNav {
+    background: black;
+    opacity: 0.9;
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0.2rem;
+  }
+
+  .container-1 {
+    height: auto;
+    position: static;
+  }
+
+  .center-div {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .floating-img {
+    height: auto !important;
+    width: auto !important;
+  }
+
+  .top-div,
+  .center-div,
+  .bottom-div {
+    position: static;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  /* floating carousel section css */
+
+  .container-1 {
+    position: relative;
+    height: 100vh;
+  }
+
+  .top-div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  .center-div {
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    bottom: 20%;
+    z-index: 1;
+    width: 25%;
+  }
+
+  .bottom-div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  .service-img {
+    height: 15rem;
+    width: 30rem;
+  }
+  .tech-card {
+    height: 15rem;
+    width: 30rem;
+  }
+}
+
+/* roadmap circles */
+.circle {
+  color: white;
+  text-align: center !important;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 1.4rem 1.6rem;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+.circle-hover {
+  background: linear-gradient(to top, #00c6fb, #005bea);
+  border: 0;
+}
+
+/* animation section */
+
+/* Cursor */
+.typed-cursor {
+  color: #2cb7fb;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 0.2rem;
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
