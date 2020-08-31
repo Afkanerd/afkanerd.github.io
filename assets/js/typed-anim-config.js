@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
      * @property {string} stringsElement ID of element containing string children
      */
     strings: [
-      '<span class="h1 font-weight-bold">Opensource Creativity</span>',
-      '<span class="h1 font-weight-bold">#Software</span>',
-      '<span class="h1 font-weight-bold">#Linux</span>',
-      '<span class="h1 font-weight-bold">#Community</span>',
-      '<span class="h1 font-weight-bold">#Tech</span>',
+      '<span class="display-4">Opensource Creativity</span>',
+      '<span class="display-4">#Software</span>',
+      '<span class="display-4">#Linux</span>',
+      '<span class="display-4">#Community</span>',
+      '<span class="display-4">#Tech</span>',
     ],
     stringsElement: null,
 
