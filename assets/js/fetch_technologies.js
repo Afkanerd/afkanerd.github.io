@@ -9,7 +9,7 @@ ajax.onreadystatechange = function () {
       var repo = sr[repo];
 
       var repo_name = document.createElement("h5");
-      repo_name.setAttribute("class", "text-danger  font-weight-bold");
+      repo_name.setAttribute("class", "text-white  font-weight-bold");
       repo_name.appendChild(document.createTextNode(`${repo.name} | ${repo.language}`));
 
       var repo_description = document.createElement("p");
@@ -23,13 +23,13 @@ ajax.onreadystatechange = function () {
       repo_link.appendChild(document.createTextNode("learn more"));
 
       var div = document.createElement("div");
-      div.setAttribute("class", "repo-bg p-3 rounded mx-auto mb-5 tech-card");
+      div.setAttribute("class", "bg-image-3 p-3 rounded mx-auto mb-5 repo-card shadow");
       div.appendChild(repo_name);
       div.appendChild(repo_description);
       div.appendChild(repo_link);
 
       var div_column = document.createElement("div");
-      div_column.setAttribute("class", "col-md-6");
+      div_column.setAttribute("class", "col-md-6 mb-5");
       div_column.appendChild(div);
 
       var main_body = document.getElementById("main_body");

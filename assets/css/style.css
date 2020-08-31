@@ -19,6 +19,12 @@ body {
   background-size: cover;
   background-position: center;
 }
+.bg-image-3 {
+  background-image: url("/assets/images/bg-img-1b.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .darken {
   filter: brightness(95%);
@@ -320,5 +326,11 @@ header {
 .tech-card img {
   height: 20rem;
   width: 20rem;
+  margin: 0 auto !important;
+}
+
+.repo-card {
+  height: 15rem;
+  width: 30rem;
   margin: 0 auto !important;
 }
