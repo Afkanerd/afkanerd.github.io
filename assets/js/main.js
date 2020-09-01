@@ -1,10 +1,38 @@
+//main.js controls all interactions
+
+var technologies_swiper = new Swiper('.swiper-container', {
+  observer: true,
+  observeParents: true,
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  fadeEffect: {
+    crossFade: true
+  },
+  autoplay: {
+    delay: 5000,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', '/assets/particlesjs-config.json', function () {
   console.log('callback - particles.js config loaded');
 });
-
-
 
 $(document).ready(function () {
 
@@ -23,23 +51,9 @@ $(document).ready(function () {
   });
   /* logo animation end */
 
-  /* number count effect */
-  $('.count').each(function () {
-    $(this).prop('Counter', 0).animate({
-      Counter: $(this).data('value')
-    }, {
-      duration: 10000,
-      easing: 'swing',
-      step: function (now) {
-        $(this).text(this.Counter.toFixed());
-      }
-    });
-  });
-  /* number count effect */
-
-
 });
 
 //footer date placement
 var date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear() + " ";
+

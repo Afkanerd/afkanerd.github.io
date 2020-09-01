@@ -23,13 +23,13 @@ ajax.onreadystatechange = function () {
       repo_link.appendChild(document.createTextNode("learn more"));
 
       var div = document.createElement("div");
-      div.setAttribute("class", "bg-image-3 p-3 rounded mx-auto mb-5 repo-card shadow");
+      div.setAttribute("class", " p-3 rounded mx-auto mb-5");
       div.appendChild(repo_name);
       div.appendChild(repo_description);
       div.appendChild(repo_link);
 
       var div_column = document.createElement("div");
-      div_column.setAttribute("class", "col-md-6 mb-5");
+      div_column.setAttribute("class", "swiper-slide bg-image-3 rounded shadow-lg");
       div_column.appendChild(div);
 
       var main_body = document.getElementById("main_body");
