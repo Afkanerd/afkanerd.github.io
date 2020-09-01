@@ -278,8 +278,9 @@ header {
 .typed-cursor {
   color: #2cb7fb;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-left: 0.2rem;
+  line-height: 1.5;
   display: inline;
   font-family: "Montserrat", sans-serif;
   -webkit-animation: blink 0.7s infinite;
