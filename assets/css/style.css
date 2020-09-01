@@ -330,8 +330,19 @@ header {
   margin: 0 auto !important;
 }
 
-.repo-card {
-  height: 15rem;
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-image: url("/assets/images/bg-img-1b.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+  background-size: cover;
   width: 30rem;
-  margin: 0 auto !important;
+  height: 15rem;
 }
