@@ -18,7 +18,7 @@ var technologies_swiper = new Swiper('.swiper-container', {
     crossFade: true
   },
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
   mousewheel: {
     invert: true,
