@@ -199,6 +199,13 @@ header i {
   z-index: 1;
 }
 
+.tech_img {
+  display: inline-block !important;
+  margin: 0 auto;
+  width: 500px !important;
+  height: 300px !important;
+}
+
 #header-text {
   position: absolute;
   top: 40%;
@@ -238,16 +245,6 @@ header i {
     text-align: center !important;
     border: 1px solid white;
     border-radius: 100%;
-  }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (max-width: 990px) {
-  #navbarNav {
-    background: black;
-    opacity: 0.9;
-    padding: 1.5rem 1rem;
-    margin: 1.5rem 0.2rem;
   }
 }
 
