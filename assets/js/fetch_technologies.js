@@ -17,7 +17,6 @@ ajax.onreadystatechange = function () {
       repo_description.appendChild(document.createTextNode(repo.description));
 
       var repo_link = document.createElement("a");
-      repo_link.setAttribute("style", "cursor: pointer;");
       repo_link.setAttribute("class", "btn btn-outline-light  py-2 px-4 ");
       repo_link.href = repo.html_url;
       repo_link.appendChild(document.createTextNode("learn more"));
@@ -29,7 +28,7 @@ ajax.onreadystatechange = function () {
       div.appendChild(repo_link);
 
       var div_column = document.createElement("div");
-      div_column.setAttribute("class", "swiper-slide bg-image-3 rounded shadow-lg");
+      div_column.setAttribute("class", "swiper-slide rounded");
       div_column.appendChild(div);
 
       var main_body = document.getElementById("main_body");
