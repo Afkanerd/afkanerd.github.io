@@ -324,13 +324,6 @@ header {
   }
 }
 
-.tech-card,
-.tech-card img {
-  height: 18rem;
-  width: 30rem;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-}
-
 .swiper-container {
   width: 100%;
   padding-top: 50px;
@@ -345,11 +338,10 @@ header {
   background-size: cover;
   width: 30rem;
   height: 15rem;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.5) !important;
 }
 
 /*  hover cards */
-
 *,
 *:before,
 *:after {
@@ -366,7 +358,7 @@ header {
 
 .hover_container .title {
   text-align: center;
-  margin: 1.5rem 0;
+  margin: auto;
 }
 
 .content {
