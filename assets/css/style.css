@@ -4,7 +4,6 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
   line-height: 1.8 !important;
 }
 
@@ -14,7 +13,6 @@ body {
   background-size: cover;
   background-position: center;
 }
-
 .bg-image-2 {
   background-image: url("/assets/images/bg-img-3.png");
   background-repeat: no-repeat;
@@ -356,10 +354,6 @@ header {
   box-sizing: border-box;
 }
 
-.hover_container {
-  padding: 1em 0;
-}
-
 .hover_container .title {
   text-align: center;
   margin: auto;
@@ -374,7 +368,14 @@ header {
   border-radius: 50%;
 }
 
-.content .content-overlay {
+.partners-content {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay,
+.partners-content .content-overlay {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   height: 100%;
@@ -389,12 +390,12 @@ header {
   transition: all 0.4s ease-in-out 0s;
 }
 
-.content:hover .content-overlay {
+.content:hover .content-overlay,
+.partners-content:hover .content-overlay {
   opacity: 1;
 }
 
 .content-image {
-  display: block;
   height: 100%;
   margin: 0 auto;
 }
@@ -402,12 +403,11 @@ header {
 .content-details {
   position: absolute;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
   width: 100%;
   top: 50%;
   left: 50%;
-  opacity: 0;
+  padding: 1rem;
+  display: none;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -416,10 +416,11 @@ header {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.content:hover .content-details {
+.content:hover .content-details,
+.partners-content:hover .content-details {
   top: 50%;
   left: 50%;
-  opacity: 1;
+  display: block;
 }
 
 .content-details h3 {
