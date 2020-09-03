@@ -266,9 +266,13 @@ header {
   text-align: center !important;
   border: 1px solid white;
   border-radius: 100%;
-  padding: 1.4rem 1.6rem;
   font-size: 2rem;
   margin: 0 auto;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
 }
 .circle-hover {
   background: linear-gradient(to top, #00c6fb, #005bea);
