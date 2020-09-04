@@ -207,8 +207,8 @@ header i {
   top: 35%;
   right: 10%;
   left: 10%;
-  color:white;
-  font-size:3rem !important;
+  color: white;
+  font-size: 3rem !important;
 }
 #scroll_down_icon {
   position: absolute;
@@ -236,25 +236,36 @@ header i {
 /* roadmap circles */
 .circle {
   color: white;
-  text-align: center !important;
   border: 1px solid white;
   border-radius: 100%;
   font-size: 2rem;
-  margin: 0 auto;
   display: flex;
-  height: 80px;
-  width: 80px;
+  margin: 0 auto;
+  height: 75px;
+  width: 75px;
   align-items: center;
   justify-content: center;
 }
 .circle-hover {
-  background: linear-gradient(to top, #00c6fb, #005bea);
-  border: 0;
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098d1;
+  background-color: #2098d1;
+  color: white;
+  border: none;
 }
 
 /* Cursor */
 .typed-cursor {
-  color: #2cb7fb;
+  color: #2098d1;
   font-weight: bold;
   font-size: 3rem;
   margin-left: 0.2rem;
@@ -339,7 +350,7 @@ header i {
   position: relative;
   margin: auto;
   overflow: hidden;
-  height:auto;
+  height: auto;
 }
 
 .team_content .content_overlay,
@@ -359,7 +370,7 @@ header i {
 }
 
 .partners_content .content_overlay {
-  background: #2cb7fb;
+  background: #2098d1;
 }
 
 .team_content:hover .content_overlay,
@@ -431,12 +442,10 @@ header i {
     height: 250px;
     width: 250px;
   }
-
-  .partners_content{
-    height:300px;
+  .partners_content {
+    height: 300px;
     max-width: 100%;
     margin: 1rem auto;
-
     box-shadow: 0.25rem 1rem 1.5rem rgba(0, 0, 0, 0.2) !important;
   }
 }
