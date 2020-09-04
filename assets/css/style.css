@@ -216,19 +216,23 @@ header i {
   right: 20%;
   left: 20%;
 }
-#scroll-down i {
-  cursor: pointer;
+
+#scroll_down_icon {
   position: absolute;
-  left: 48%;
-  right: 48%;
+  left: 20%;
+  right: 20%;
   bottom: 10%;
-  text-align: center !important;
-  border: 1px solid white;
-  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#scroll-down i:hover {
+#scroll_down_icon i {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+#scroll_down_icon i:hover {
   border: none !important;
-  background: linear-gradient(to bottom, #00c6fb, #005bea);
 }
 
 @media screen and (max-width: 767px) {
@@ -238,17 +242,6 @@ header i {
     right: 0;
     left: 0;
     padding: 1.5rem 1rem;
-  }
-
-  #scroll-down i {
-    cursor: pointer;
-    position: absolute;
-    left: 46%;
-    right: 46%;
-    bottom: 5%;
-    text-align: center !important;
-    border: 1px solid white;
-    border-radius: 100%;
   }
 }
 
