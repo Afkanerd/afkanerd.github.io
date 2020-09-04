@@ -4,7 +4,10 @@ body {
   font-weight: 400;
   line-height: 2 !important;
 }
-
+.bg-black {
+  background-color: #18222f;
+  color: white;
+}
 .bg-image-1 {
   background-image: url("/assets/images/bg-img-3flip.png");
   background-repeat: no-repeat;
@@ -28,9 +31,6 @@ body {
   background: transparent;
 }
 
-.bowlby {
-  font-family: "Bowlby One SC", cursive;
-}
 .poppins {
   font-family: "Poppins";
 }
@@ -43,7 +43,11 @@ body {
 }
 .logo {
   font-family: Anurati;
-  color: white;
+  letter-spacing: 1rem;
+  color:white;
+}
+a.logo:hover{
+  color:white;
 }
 .logo-sm {
   width: 15rem;
@@ -65,15 +69,6 @@ a:focus {
   width: 25px;
   border-radius: 100%;
 }
-.bg-black {
-  background-color: #18222f;
-  color: white;
-}
-
-footer p a {
-  color: white !important;
-}
-
 .nav-link {
   color: white !important;
   font-family: "poppins", sans-serif;
@@ -82,13 +77,11 @@ footer p a {
 .nav-link.active {
   background: #2098d1 !important;
 }
-
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: none;
   box-shadow: none;
 }
-
 /* Material icons responsive font sizes */
 .material-icons.md-18 {
   font-size: 18px;
@@ -103,64 +96,12 @@ footer p a {
 .material-icons.md-48 {
   font-size: 48px;
 }
-/* Material icons responsive font sizes */
-
-/* override bootstrap classes */
-
-.btn-primary {
-  background: linear-gradient(to top, #005bea, #00c6fb);
-  color: white !important;
-}
-.btn-primary:hover {
-  background: linear-gradient(to top, #00c6fb, #005bea);
-}
-.text-primary {
-  background: linear-gradient(to top, #00c6fb, #005bea);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .text-dark {
   color: #18222f !important;
 }
-
-.logo:hover,
-footer p a:hover {
-  background: linear-gradient(to top, #00c6fb, #005bea);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .rounded {
   border-radius: 15px !important;
 }
-/* Gradient buttons */
-.btn-hover {
-  color: #fff !important;
-  cursor: pointer;
-  background-size: 300% 100%;
-  background-image: linear-gradient(to left, #005bea, #00c6fb, #005bea, #00c6fb);
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.btn-hover:hover {
-  background-position: 100% 0;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.btn-hover:focus {
-  outline: none;
-}
-
-/* override bootstrap classes */
-
 h1,
 h2,
 h3,
@@ -170,8 +111,7 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
-
-/* ----  header customization ---- */
+/* ----  header  ---- */
 header {
   position: relative;
   height: 100vh !important;
@@ -227,12 +167,10 @@ header i {
 #scroll_down_icon i:hover {
   border: none !important;
 }
-
 .tech_img {
   max-width: 100%;
   height: auto;
 }
-
 /* roadmap circles */
 .circle {
   color: white;
@@ -262,7 +200,6 @@ header i {
   color: white;
   border: none;
 }
-
 /* Cursor */
 .typed-cursor {
   color: #2098d1;
@@ -275,7 +212,6 @@ header i {
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
-
 @keyframes blink {
   0% {
     opacity: 1;
@@ -287,7 +223,6 @@ header i {
     opacity: 1;
   }
 }
-
 @-webkit-keyframes blink {
   0% {
     opacity: 1;
@@ -310,13 +245,11 @@ header i {
     opacity: 1;
   }
 }
-
 .swiper-container {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
 .swiper-slide {
   background-image: url("/assets/images/bg-img-1b.png");
   background-repeat: no-repeat;
@@ -325,18 +258,7 @@ header i {
   height: 15rem;
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.5) !important;
 }
-
 /*  hover cards */
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .team_content {
   position: relative;
   margin: auto;
@@ -345,14 +267,12 @@ header i {
   width: 300px;
   border-radius: 50%;
 }
-
 .partners_content {
   position: relative;
   margin: auto;
   overflow: hidden;
   height: auto;
 }
-
 .team_content .content_overlay,
 .partners_content .content_overlay {
   background: rgba(0, 0, 0, 0.5);
@@ -368,21 +288,17 @@ header i {
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-
 .partners_content .content_overlay {
   background: #2098d1;
 }
-
 .team_content:hover .content_overlay,
 .partners_content:hover .content_overlay {
   opacity: 1;
 }
-
 .content_image {
   height: 100%;
   margin: 0 auto;
 }
-
 .content_details {
   position: absolute;
   text-align: center;
@@ -398,41 +314,33 @@ header i {
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-
 .team_content:hover .content_details,
 .partners_content:hover .content_details {
   top: 50%;
   left: 50%;
   display: block;
 }
-
 .content_details h3 {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
 }
-
 .content_details p {
   color: #fff;
 }
-
 .fadeIn-bottom {
   top: 80%;
 }
-
 .fadeIn-top {
   top: 20%;
 }
-
 .fadeIn-left {
   left: 20%;
 }
-
 .fadeIn-right {
   left: 80%;
 }
-
 @media (max-width: 768px) {
   .swiper-slide {
     width: 20rem;
@@ -455,4 +363,12 @@ header i {
     width: 500px !important;
     height: 300px !important;
   }
+}
+
+footer p a {
+  color: white !important;
+}
+#date {
+  font-size:18px;
+  margin-right:1rem;
 }

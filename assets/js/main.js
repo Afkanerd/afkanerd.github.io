@@ -46,6 +46,7 @@ $(".navbar-toggler").on("click", function () {
 $(".timeline-card").on('mouseenter mouseleave', function (e) {
   $(this).find(".circle").toggleClass('circle-hover ');
 });
+
 //footer date placement
 var date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear() + " ";
