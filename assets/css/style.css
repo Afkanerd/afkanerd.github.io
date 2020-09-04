@@ -233,14 +233,6 @@ header i {
   height: auto;
 }
 
-@media (min-width: 768px) {
-  .tech_img {
-    margin: 0 auto;
-    width: 500px !important;
-    height: 300px !important;
-  }
-}
-
 /* roadmap circles */
 .circle {
   color: white;
@@ -428,4 +420,18 @@ header i {
 
 .fadeIn-right {
   left: 80%;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 20rem;
+    height: 18rem;
+  }
+}
+@media (min-width: 768px) {
+  .tech_img {
+    margin: 0 auto;
+    width: 500px !important;
+    height: 300px !important;
+  }
 }
