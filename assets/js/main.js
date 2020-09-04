@@ -32,6 +32,11 @@ var technologies_swiper = new Swiper('.swiper-container', {
   },
 });
 
+$(".navbar-toggler").on("click", function () {
+  /*changes top nav menu */
+  $(this).text($(this).text() == "apps" ? "close" : "apps");
+  $("#header_nav").toggleClass("bg-black");
+});
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', '/assets/particlesjs-config.json', function () {
   console.log('callback - particles.js config loaded');

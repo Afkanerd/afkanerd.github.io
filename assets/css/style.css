@@ -79,6 +79,9 @@ footer p a {
   font-family: "poppins", sans-serif;
   font-size: 16px;
 }
+.nav-link.active {
+  background: #2098d1 !important;
+}
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
@@ -95,6 +98,7 @@ footer p a {
 }
 .material-icons.md-36 {
   font-size: 36px;
+  color: white !important;
 }
 .material-icons.md-48 {
   font-size: 48px;
@@ -177,7 +181,7 @@ header i {
   cursor: pointer;
 }
 
-#particles-js {
+#particles_js {
   width: 100%;
   height: 100vh;
   background-image: url("/assets/images/bg-img-1b.png");
@@ -191,7 +195,7 @@ header i {
   bottom: 0;
 }
 
-#header-nav {
+#header_nav {
   position: absolute;
   top: 0;
   right: 0;

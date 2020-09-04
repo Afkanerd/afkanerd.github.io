@@ -19,6 +19,7 @@
   <script src="/assets/js/particles.js"></script>
   <script src="/assets/js/typed.js"></script>
   <script src="/assets/js/typed-anim-config.js"></script>
+  <link href="/assets/css/hover.min.css" rel="stylesheet" />
   <link href="/assets/css/style.css" rel="stylesheet" />
 
   <title>AFKANERD - Home</title>
@@ -26,34 +27,50 @@
 
 <body>
   <header>
-    <div class="position-absolute w-100" id="particles-js"></div>
+    <div class="position-absolute w-100" id="particles_js"></div>
 
-    <nav class="navbar navbar-light pt-2" id="header-nav">
-      <a class="navbar-brand" href="/"><img class="logo-sm" src="/assets/images/logo.png">
+    <nav class="navbar navbar-light pt-2 px-0" id="header_nav">
+      <a class="navbar-brand pl-2" href="/"><img class="logo-sm" src="/assets/images/logo.png">
       </a>
 
       <div class="d-flex justify-content-center align-items-center">
-        <a class="btn btn-outline-light d-inline" href="#footer">Contact Us</a>
-        <i class="navbar-toggler material-icons md-48 text-light " data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">apps</i>
+        <a class="btn btn-outline-light d-inline" href="#contact">Contact Us</a>
+        <i class="navbar-toggler material-icons md-48 text-light hvr-push" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">apps</i>
       </div>
 
-      <div class="collapse navbar-collapse justify-content-end bg-black" id="navbarNav">
-        <ul class="navbar-nav nav-fill">
-          <li class="nav-item">
-            <a class="nav-link py-4" href="/">Home<span class="sr-only">(current)</span></a>
+      <div class="collapse navbar-collapse bg-black" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item hvr-sweep-to-right">
+            <a class="nav-link active d-flex align-items-center py-4 px-3" href="/">
+              <i class="material-icons md-36 mr-2">home</i>
+              <span class="d-inline text-light">Home</span>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link py-4" href="#about">About</a>
+          <li class="nav-item hvr-sweep-to-right">
+            <a class="nav-link d-flex align-items-center py-4 px-3" href="#about">
+              <i class="material-icons md-36 mr-2">people</i>
+              <span class="d-inline text-light">About</span>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link py-4 " href="#what_we_do">What we do</a>
+          <li class="nav-item hvr-sweep-to-right">
+            <a class="nav-link d-flex align-items-center py-4 px-3" href="#what_we_do">
+              <i class="material-icons md-36 mr-2">home</i>
+              <span class="d-inline text-light">What we do</span>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link py-4 " href="#technologies">Technologies</a>
+          <li class="nav-item hvr-sweep-to-right">
+            <a class="nav-link d-flex align-items-center py-4 px-3" href="#technologies">
+              <i class="material-icons md-36 mr-2">code</i>
+              <span class="d-inline text-light">Technologies</span>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link py-4" href="">Contact Us</a>
+          <li class="nav-item hvr-sweep-to-right">
+            <a class="nav-link d-flex align-items-center py-4 px-3" href="#contact">
+              <i class="material-icons md-36 mr-2">forward_to_inbox</i>
+              <span class="d-inline text-light">Contact Us</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -352,7 +369,7 @@
         </div>
 
         <div class="col-sm-12 col-lg-3 col-md-6 mb-5 px-1">
-          <h6 class="mb-5 font-weight-bold">Contact Us</h6>
+          <h6 class="mb-5 font-weight-bold" id="contact">Contact Us</h6>
 
           <p>
             <i class="fas fa-home mr-3"></i>Cameroon</p>
