@@ -202,21 +202,14 @@ header i {
   left: 0;
   z-index: 1;
 }
-
-.tech_img {
-  display: inline-block !important;
-  margin: 0 auto;
-  width: 500px !important;
-  height: 300px !important;
-}
-
-#header-text {
+#header_text {
   position: absolute;
-  top: 40%;
-  right: 20%;
-  left: 20%;
+  top: 35%;
+  right: 10%;
+  left: 10%;
+  color:white;
+  font-size:3rem !important;
 }
-
 #scroll_down_icon {
   position: absolute;
   left: 20%;
@@ -235,13 +228,16 @@ header i {
   border: none !important;
 }
 
-@media screen and (max-width: 767px) {
-  #header-text {
-    position: absolute;
-    top: 40%;
-    right: 0;
-    left: 0;
-    padding: 1.5rem 1rem;
+.tech_img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .tech_img {
+    margin: 0 auto;
+    width: 500px !important;
+    height: 300px !important;
   }
 }
 
@@ -268,9 +264,8 @@ header i {
 .typed-cursor {
   color: #2cb7fb;
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-left: 0.2rem;
-  line-height: 1.5;
   display: inline;
   font-family: "Montserrat", sans-serif;
   -webkit-animation: blink 0.7s infinite;
