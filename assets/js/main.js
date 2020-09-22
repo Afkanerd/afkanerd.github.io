@@ -47,6 +47,13 @@ $(".timeline-card").on('mouseenter mouseleave', function (e) {
   $(this).find(".circle").toggleClass('circle-hover ');
 });
 
+
+// Scroll animation with AOS Library
+AOS.init({
+  duration: 1200,
+  easing: 'ease-in-out'
+});
+
 //footer date placement
 var date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear() + " ";
