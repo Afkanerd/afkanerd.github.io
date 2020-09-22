@@ -3,6 +3,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: 2 !important;
+  text-align: justify;
 }
 .bg-black {
   background-color: #18222f;
@@ -44,10 +45,10 @@ body {
 .logo {
   font-family: Anurati;
   letter-spacing: 1rem;
-  color:white;
+  color: white;
 }
-a.logo:hover{
-  color:white;
+a.logo:hover {
+  color: white;
 }
 .logo-sm {
   width: 15rem;
@@ -290,6 +291,7 @@ header i {
 }
 .partners_content .content_overlay {
   background: #2098d1;
+  border-radius: 1rem;
 }
 .team_content:hover .content_overlay,
 .partners_content:hover .content_overlay {
@@ -354,6 +356,7 @@ header i {
     height: 300px;
     max-width: 100%;
     margin: 1rem auto;
+    border-radius: 1rem;
     box-shadow: 0.25rem 1rem 1.5rem rgba(0, 0, 0, 0.2) !important;
   }
 }
@@ -369,6 +372,6 @@ footer p a {
   color: white !important;
 }
 #date {
-  font-size:18px;
-  margin-right:1rem;
+  font-size: 18px;
+  margin-right: 1rem;
 }
