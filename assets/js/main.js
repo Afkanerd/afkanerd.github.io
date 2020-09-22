@@ -32,21 +32,28 @@ var technologies_swiper = new Swiper('.swiper-container', {
   },
 });
 
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+// particlesJS.load(@dom-id, @path-json, @callback (optional));
 particlesJS.load('particles_js', '/assets/particlesjs-config.json', function () {
   console.log('callback - particles.js config loaded');
 });
 
 $(".navbar-toggler").on("click", function () {
-  /*changes top nav menu */
+  // changes top nav menu
   $(this).text($(this).text() == "apps" ? "close" : "apps");
   $("#header_nav").toggleClass("bg-black");
 });
-/* timeline section js */
+// timeline section js
 $(".timeline-card").on('mouseenter mouseleave', function (e) {
+  $(this).toggleClass("rounded shadow")
   $(this).find(".circle").toggleClass('circle-hover ');
 });
-
+// scroll down
+$("#scroll_down_icon").click(function (e) {
+  window.scroll({
+    top: 500,
+    behavior: 'smooth'
+  });
+})
 
 // Scroll animation with AOS Library
 AOS.init({
