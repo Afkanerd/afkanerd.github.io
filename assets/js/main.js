@@ -50,7 +50,7 @@ $(".timeline-card").on('mouseenter mouseleave', function (e) {
 // scroll down
 $("#scroll_down_icon").click(function (e) {
   window.scroll({
-    top: 500,
+    top: 400,
     behavior: 'smooth'
   });
 })
