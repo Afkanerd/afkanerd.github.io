@@ -273,6 +273,7 @@ header i {
   margin: auto;
   overflow: hidden;
   height: auto;
+  border-radius:1rem;
 }
 .team_content .content_overlay,
 .partners_content .content_overlay {

@@ -14,7 +14,6 @@ var ajax = new XMLHttpRequest;
 ajax.onreadystatechange = function () {
   if (this.status == 200 && this.readyState == 4) {
     var sr = JSON.parse(this.responseText);
-    console.log(sr);
     for (var repo in sr) {
       var repo = sr[repo];
       var repo_name = document.createElement("h5");
