@@ -168,9 +168,12 @@ header i {
 #scroll_down_icon i:hover {
   border: none !important;
 }
-.tech_img {
-  max-width: 100%;
-  height: auto;
+
+.tech_img_box a {
+  color:black;
+}
+.tech_img_box a:hover {
+  color: #2098d1;
 }
 /* roadmap circles */
 .circle {
@@ -273,7 +276,7 @@ header i {
   margin: auto;
   overflow: hidden;
   height: auto;
-  border-radius:1rem;
+  border-radius: 1rem;
 }
 .team_content .content_overlay,
 .partners_content .content_overlay {
@@ -362,9 +365,9 @@ header i {
   }
 }
 @media (min-width: 768px) {
-  .tech_img {
+  .tech_img_box {
     margin: 0 auto;
-    width: 500px !important;
+    max-width: 500px !important;
     height: 300px !important;
   }
 }
