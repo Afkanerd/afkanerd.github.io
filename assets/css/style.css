@@ -4,45 +4,21 @@ body {
   line-height: 2 !important;
   text-align: justify;
 }
+
+@font-face {
+  font-family: "Anurati";
+  src: url("/assets/font/Anurati.otf") format("truetype"); /* Safari, Android, iOS */
+  font-display: swap;
+}
 .bg-black {
   background-color: #18222f;
   color: white;
 }
-.bg-image-1 {
-  background-image: url("/assets/images/bg-img-3flip.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.bg-image-2 {
-  background-image: url("/assets/images/bg-img-3.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.bg-image-3 {
-  background-image: url("/assets/images/bg-img-1b.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
 .transparent {
   background: transparent;
 }
-
-.poppins {
-  font-family: "Poppins";
-}
-.raleway {
-  font-family: "Raleway";
-}
-
-.font-montserrat {
-  font-family: "Montserrat", sans-serif;
-}
 .logo {
-  font-family: Anurati;
+  font-family: "Anurati", sans-serif;
   letter-spacing: 1rem;
   color: white;
 }
@@ -148,6 +124,7 @@ header i {
   right: 10%;
   left: 10%;
   color: white;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem !important;
 }
 #scroll_down_icon {
@@ -169,7 +146,7 @@ header i {
 }
 
 .tech_img_box a {
-  color:black;
+  color: black;
 }
 .tech_img_box a:hover {
   color: #2098d1;
@@ -347,6 +324,9 @@ header i {
   left: 80%;
 }
 @media (max-width: 768px) {
+  #header_text {
+    font-size: 2.5rem !important;
+  }
   .swiper-slide {
     width: 20rem;
     height: 18rem;
