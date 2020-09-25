@@ -231,7 +231,7 @@ header i {
   padding-bottom: 50px;
 }
 .swiper-slide {
-  background-image: url("/assets/images/bg-img-1b.png");
+  background-image: url("/assets/images/bg-img-1b.webp");
   background-repeat: no-repeat;
   background-size: cover;
   width: 30rem;
