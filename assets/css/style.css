@@ -18,16 +18,14 @@ body {
   background: transparent;
 }
 .logo {
-  font-family: "Anurati", sans-serif;
+  font-family: 'VT323', monospace;
+  font-weight:bold;
   letter-spacing: 1rem;
   color: white;
+  font-size:2.5rem;
 }
 a.logo:hover {
   color: white;
-}
-.logo-sm {
-  width: 15rem;
-  height: 1.8rem;
 }
 a,
 a:hover,
