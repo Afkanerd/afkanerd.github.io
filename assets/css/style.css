@@ -18,11 +18,11 @@ body {
   background: transparent;
 }
 .logo {
-  font-family: 'VT323', monospace;
-  font-weight:bold;
+  font-family: "VT323", monospace;
+  font-weight: bold;
   letter-spacing: 1rem;
   color: white;
-  font-size:2.5rem;
+  font-size: 2.5rem;
 }
 a.logo:hover {
   color: white;
@@ -32,6 +32,7 @@ a:hover,
 a:visited,
 a:focus {
   text-decoration: none;
+  cursor: pointer;
 }
 .icon {
   height: 30px;
@@ -355,4 +356,14 @@ footer p a {
 #date {
   font-size: 18px;
   margin-right: 1rem;
+}
+.btn-outline-dark {
+  color: #18222f;
+  border-color: #18222f;
+}
+
+.btn-outline-dark:hover {
+  color: #fff !important;
+  background-color: #18222f;
+  border-color: #18222f;
 }
