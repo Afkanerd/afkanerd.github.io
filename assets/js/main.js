@@ -4,11 +4,6 @@
 particlesJS.load('particles_js', '/assets/particlesjs-config.json', function () {
   console.log('callback - particles.js config loaded');
 });
-// Scroll animation with AOS Library
-AOS.init({
-  duration: 1200,
-  easing: 'ease-in-out'
-});
 //fetch technologies from github
 var ajax = new XMLHttpRequest;
 ajax.onreadystatechange = function () {
@@ -74,11 +69,6 @@ var technologies_swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
 });
-// changes top nav menu icon and background when opened
-$(".navbar-toggler").on("click", function () {
-  $(this).text($(this).text() == "apps" ? "close" : "apps");
-  $("#header_nav").toggleClass("bg-black");
-});
 // timeline section js
 $(".timeline-card").on('mouseenter mouseleave', function (e) {
   $(this).toggleClass("rounded shadow")
@@ -91,7 +81,5 @@ $("#scroll_down_icon").click(function (e) {
     behavior: 'smooth'
   });
 })
-//footer date placement
-var date = document.getElementById("date");
-date.innerHTML = new Date().getFullYear() + " ";
+
 
