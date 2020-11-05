@@ -240,8 +240,8 @@ header i {
   position: relative;
   margin: auto;
   overflow: hidden;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
 }
 .partners_content {
@@ -274,8 +274,14 @@ header i {
 .partners_content:hover .content_overlay {
   opacity: 1;
 }
+.team_content .content_image {
+  filter: grayscale(100%);
+}
+.team_content:hover .content_image {
+  filter: initial;
+}
 .content_image {
-  height: 100%;
+  height: auto;
   margin: 0 auto;
 }
 .content_details {
