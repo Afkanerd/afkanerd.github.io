@@ -7,7 +7,8 @@ body {
 
 @font-face {
   font-family: "meninblueregular";
-  src: url("../fonts/meninblue-x3m5-webfont.woff2") format("woff2"), url("../fonts/meninblue-x3m5-webfont.woff") format("woff");
+  src: url("../fonts/meninblue-x3m5-webfont.woff2") format("woff2"),
+    url("../fonts/meninblue-x3m5-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +20,13 @@ body {
   font-family: "meninblueregular", monospace;
   letter-spacing: 1rem;
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+.navbar-toggler {
+  font-size: 48px;
+}
+footer .logo {
+  font-size: 12px;
 }
 a.logo:hover {
   color: white;
@@ -80,9 +87,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "meninblueregular", "Montserrat", sans-serif;
   font-weight: 700;
+  letter-spacing: 0.2rem;
 }
+
 /* ----  header  ---- */
 header {
   position: relative;
@@ -320,6 +329,12 @@ header i {
   left: 80%;
 }
 @media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .navbar-toggler {
+    font-size: 36px;
+  }
   #header_text {
     font-size: 2.5rem !important;
   }
@@ -366,4 +381,8 @@ footer p a {
 }
 .w-20 {
   width: 20%;
+}
+
+#timeline h6 {
+  font-family: "Montserrat", sans-serif;
 }
