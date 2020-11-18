@@ -141,11 +141,6 @@ header i {
   border: none !important;
 }
 
-.tech_img_box img.matrix {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-
 /* roadmap circles */
 .circle {
   color: white;
