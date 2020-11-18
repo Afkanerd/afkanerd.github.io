@@ -339,8 +339,8 @@ header i {
     font-size: 2.5rem !important;
   }
   .swiper-slide {
-    width: 20rem;
-    height: 18rem;
+    width: 21rem;
+    height: auto;
   }
   .team_content {
     height: 250px;
