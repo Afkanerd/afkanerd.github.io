@@ -152,8 +152,8 @@ header i {
 
 /* roadmap circles */
 .circle {
-  color: white;
-  border: 1px solid white;
+  color: #2098d1;
+  border: 1px solid #2098d1;
   border-radius: 100%;
   font-size: 2rem;
   display: flex;
@@ -175,10 +175,10 @@ header i {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   background-color: #2098d1;
-  background-color: #2098d1;
   color: white;
   border: none;
 }
+
 /* Cursor */
 .typed-cursor {
   color: #2098d1;
@@ -359,6 +359,10 @@ header i {
     margin: 0 auto;
     max-width: 500px !important;
     height: 300px !important;
+  }
+  .timeline_card {
+    width: 250px;
+    height:auto;
   }
 }
 

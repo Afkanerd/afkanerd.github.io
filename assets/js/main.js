@@ -70,8 +70,8 @@ var technologies_swiper = new Swiper('.swiper-container', {
   },
 });
 // timeline section js
-$(".timeline-card").on('mouseenter mouseleave', function (e) {
-  $(this).toggleClass("rounded shadow")
+$(".timeline_card").on('mouseenter mouseleave', function (e) {
+  $(this).toggleClass("rounded shadow-lg")
   $(this).find(".circle").toggleClass('circle-hover ');
 });
 // scroll down
