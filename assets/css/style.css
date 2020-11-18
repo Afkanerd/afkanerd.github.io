@@ -6,23 +6,20 @@ body {
 }
 
 @font-face {
-  font-family: "Anurati";
-  src: url("../font/Anurati.otf") format("truetype"); /* Safari, Android, iOS */
-  font-display: swap;
+  font-family: "meninblueregular";
+  src: url("../fonts/meninblue-x3m5-webfont.woff2") format("woff2"), url("../fonts/meninblue-x3m5-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 .bg-black {
   background-color: #18222f;
   color: white;
 }
-.transparent {
-  background: transparent;
-}
 .logo {
-  font-family: "VT323", monospace;
-  font-weight: bold;
+  font-family: "meninblueregular", monospace;
   letter-spacing: 1rem;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 a.logo:hover {
   color: white;
@@ -145,7 +142,8 @@ header i {
 }
 
 .tech_img_box img.matrix {
-  -webkit-filter:invert(100%);
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 /* roadmap circles */
