@@ -11,14 +11,13 @@ ajax.onreadystatechange = function () {
     var sr = JSON.parse(this.responseText);
     for (var repo in sr) {
       var repo = sr[repo];
-
+      var main_body = document.getElementById("main_body");
       var slide = `
-          <div class="swiper-slide rounded p-2 p-md-4">
-            <h5 class="my-3">${repo.name} | ${repo.language}</h5>
-            <p class="py-2"> ${repo.description}</p>
-            <a class="btn btn-outline-light py-2 px-4" href="${repo.html_url}">learn more</a>
-          </div>`
-
+      <div class="swiper-slide rounded p-2 p-md-4">
+        <h5 class="my-3">${repo.name} | ${repo.language}</h5>
+        <p class="py-2"> ${repo.description}</p>
+        <a class="btn btn-outline-light py-2 px-4" href="${repo.html_url}" target="_blank">learn more</a>
+      </div>`
       main_body.innerHTML += slide;
     }
   }
