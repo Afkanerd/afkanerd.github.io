@@ -11,26 +11,15 @@ ajax.onreadystatechange = function () {
     var sr = JSON.parse(this.responseText);
     for (var repo in sr) {
       var repo = sr[repo];
-      var repo_name = document.createElement("h5");
-      repo_name.setAttribute("class", "text-white  font-weight-bold");
-      repo_name.appendChild(document.createTextNode(`${repo.name} | ${repo.language}`));
-      var repo_description = document.createElement("p");
-      repo_description.setAttribute("class", "text-light py-4");
-      repo_description.appendChild(document.createTextNode(repo.description));
-      var repo_link = document.createElement("a");
-      repo_link.setAttribute("class", "btn btn-outline-light  py-2 px-4 ");
-      repo_link.href = repo.html_url;
-      repo_link.appendChild(document.createTextNode("learn more"));
-      var div = document.createElement("div");
-      div.setAttribute("class", " p-3 rounded mx-auto mb-5");
-      div.appendChild(repo_name);
-      div.appendChild(repo_description);
-      div.appendChild(repo_link);
-      var div_column = document.createElement("div");
-      div_column.setAttribute("class", "swiper-slide rounded");
-      div_column.appendChild(div);
-      var main_body = document.getElementById("main_body");
-      main_body.appendChild(div_column)
+
+      var slide = `
+          <div class="swiper-slide rounded p-2 p-md-4">
+            <h5 class="my-3">${repo.name} | ${repo.language}</h5>
+            <p class="py-2"> ${repo.description}</p>
+            <a class="btn btn-outline-light py-2 px-4" href="${repo.html_url}">learn more</a>
+          </div>`
+
+      main_body.innerHTML += slide;
     }
   }
 }
