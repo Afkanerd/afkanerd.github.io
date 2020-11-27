@@ -359,7 +359,7 @@ header i {
   .tech_img_box {
     margin: 0 auto;
     max-width: 500px !important;
-    height: 300px !important;
+    height: auto;
   }
   .timeline_card {
     width: 250px;
