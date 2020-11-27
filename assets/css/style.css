@@ -357,7 +357,7 @@ header i {
 }
 @media (min-width: 768px) {
   .tech_img_box {
-    margin: 0 auto;
+    margin: auto;
     max-width: 500px !important;
     height: auto;
   }
