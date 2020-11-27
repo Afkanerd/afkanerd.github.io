@@ -363,6 +363,7 @@ header i {
   }
   .timeline_card {
     width: 250px;
+    margin:auto;
     height: auto;
   }
 }
