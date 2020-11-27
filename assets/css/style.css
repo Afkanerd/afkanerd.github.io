@@ -235,7 +235,7 @@ header i {
   background-size: cover;
   width: 30rem;
   height: auto;
-  padding:auto;
+  padding: auto;
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.5) !important;
 }
 /*  hover cards */
@@ -363,7 +363,7 @@ header i {
   }
   .timeline_card {
     width: 250px;
-    height:auto;
+    height: auto;
   }
 }
 
@@ -390,4 +390,8 @@ footer p a {
 
 #timeline h6 {
   font-family: "Montserrat", sans-serif;
+}
+
+.list-group-flush > .list-group-item {
+  padding: 0.5rem 1rem;
 }
