@@ -284,6 +284,7 @@ header i {
   filter: initial;
 }
 .content_image {
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -348,11 +349,14 @@ header i {
     width: 250px;
   }
   .partners_content {
-    height: 300px;
     max-width: 100%;
     margin: 1rem auto;
     border-radius: 1rem;
-    box-shadow: 0.25rem 1rem 1.5rem rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0.25rem 1rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+    transition: height 2s linear 0.5s;
+  }
+  .partners_content:hover {
+    height: 300px;
   }
 }
 @media (min-width: 768px) {
@@ -363,7 +367,7 @@ header i {
   }
   .timeline_card {
     width: 250px;
-    margin:auto;
+    margin: auto;
     height: auto;
   }
 }
