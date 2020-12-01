@@ -13,7 +13,7 @@ body {
   font-style: normal;
 }
 .bg-black {
-  background-color: #18222f;
+  background-color: #001530;
   color: white;
 }
 .logo {
@@ -76,7 +76,7 @@ a:focus {
   font-size: 48px;
 }
 .text-dark {
-  color: #18222f !important;
+  color: #001530 !important;
 }
 .rounded {
   border-radius: 15px !important;
@@ -380,14 +380,14 @@ footer p a {
   margin-right: 1rem;
 }
 .btn-outline-dark {
-  color: #18222f;
-  border-color: #18222f;
+  color: #001530;
+  border-color: #001530;
 }
 
 .btn-outline-dark:hover {
   color: #fff !important;
-  background-color: #18222f;
-  border-color: #18222f;
+  background-color: #001530;
+  border-color: #001530;
 }
 .w-20 {
   width: 20%;
