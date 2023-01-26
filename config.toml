@@ -1,5 +1,5 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://afkanerd.github.io/'
 languageCode = 'en-us'
-title = 'Afkanerd Post'
+title = 'Afkanerd Blog'
 theme = 'fuji'
 
