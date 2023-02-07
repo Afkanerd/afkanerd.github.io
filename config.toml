@@ -1,148 +1,132 @@
-baseurl = "https://afkanerd.github.io"
-metaDataFormat = "yaml"
-title = "Afkanerd's Blog"
-theme = "blist"
-
+baseURL = "https://afkanerd.github.io"
+title = "Blonde"
+author = "wamo"
+languageCode = "en"
 DefaultContentLanguage = "en"
-DefaultContentLanguageInSubdir = true
-[languages]
-  [languages.en]
-    contentDir = "content/en" #English
-    weight = 1
-    languageName = "English"
-    [languages.en.params]
-      introTitle = "Welcome to Afkanerd's Blog"
-      introSubtitle = "Afkanerd is and idea, the idea being We code for the people. The ideology evolved form the believe in human rights, freedom fo speech nd expression."
-      introPhoto = ""
-      logo = "/logo.png"
+enableInlineShortcodes = true
+theme = "Blonde"
+enableRobotsTXT = true
 
-    [[languages.en.menu.main]]
-        name = "Blog"
-        url = "blog"
-        weight = 1
+# Please enable this feature if the site is available in Japanese, Chinese or Korean.
+#hasCJKLanguage = true
 
-    [[languages.en.menu.main]]
-        name = "About"
-        url = "https://afkanerd.com"
-        weight = 2
+# If you're using Google Analytics, you can enable this feature.
+#googleAnalytics = "G-1234567890"
 
-    [[languages.en.menu.main]]
-        name = "Tags"
-        url = "tags"
-        weight = 3
-
-    [[languages.en.menu.main]]
-        name = "Top Post"
-        url = "/en/blog/swob/"
-        weight = 4
-
+# Disqus Comment System
+#disqusShortname = ""
 
 [params]
-  # Enable the darkmode toggle in header
-  darkModeToggle = true
-  
-  # Enable search in header
-  enableSearch = true
+# Base color of the website.
+# https://tailwindcss.com/docs/background-color
+base_color = "bg-gray-800"
 
-  # Option to customize the search parameters of a page
-  # Below are the supported options; Note that including entire content
-  # may slowdown the loading of search results
-  # Title of page is included by default
-  searchKeys = [
-    "tags",
-    "date",
-    "categories",
-    "summary",
-    "content",
-    "link",
-    "author"
-  ]
+#Site description
+description = "Blonde theme for Hugo."
 
-  # Custom copyright - optional
-  copyright = "Afkanerd InfoTec"
-  favicon = "/favicon.ico"
+# The number of articles to be displayed on a single page.
+paginator_pages = "5"
 
-  # Color for the intro details and social links block, not applicable for dark mode
-  # Supported values: Any color from TailwindCSS default colors
-  # Reference: https://tailwindcss.com/docs/customizing-colors
-  ascentColor = "bg-blue-100"
+# Enable this if you want the archive list to be in a drop-down format.
+archive_dropdown = "false"
 
-  # The page bundle that is shown on the front page
-  frontBundle = "blog"
+# Number of tags to be displayed.
+tagsLimit = 20
 
-  # Used to hide the post metadata such as posted date, reading time and word count
-  # Can be used at site level or page level
-  hideMeta = false
+# Dark mode by default : dark
+# Light mode by default : light
+darkmode = "light"
 
-  # To hide "Other languages" option if the post is available in multiple languages
-  # Can be used at site level or page level
-  hideOtherLanguages = false
+  [params.ad]
+    # Google AdSense
+    # ex. ca-pub-0000000000000000
+    googleAdSense = ""
 
-  # Add support for Table of contents
-  # Can be added to a page level also in markdown frontmatter
-  toc = true
+    # ex. 000000000
+    adslot = ""
 
-  # Hides the thumbnail in post view
-  # Thumbnails in home and blog pages will still be shown
-  # This setting can also be in page's markdown file
-  hidePageThumbnail = false
+    # Placement of ads
+    postTop = false
+    postBottom = false
 
-# Comments system
-[params.comments]
-  # Supports disqus, giscus and utterances
-  # Check hugo docs for setting up disqus
-  system = "giscus"
+  [params.post]
+    # Show thumbnails
+    thumbnail = true
 
-  # Options for giscus, exclude hyphens
-  repo = ""
-  repoid = ""
-  category = ""
-  categoryid = ""
-  mapping = ""
-  strict = ""
-  reactionsenabled = ""
-  emitmetadata = ""
-  inputposition = ""
-  theme = ""
+    # Disable the "NO IMAGE" image.
+    noimage = true
 
-  # Options for utterances, exclude hyphens
-  # repo = ""
-  # issueterm = ""
-  # theme = ""
+    # See the Tailwind CSS documentation to set it up.
+    # Recommended settings are h-32 to h-48.
+    # https://tailwindcss.com/docs/height
+    thumbnail_height = "lg:h-44"
 
-[params.homepage.social]
-  # Global params common for both languages
-  title = "Follow Us"
-  description = "We code for the People"
+    # https://tailwindcss.com/docs/width
+    thumbnail_width = "lg:w-auto"
 
-  [[params.homepage.social.icons]]
-    website = "twitter"
-    url = "https://twitter.com/afkanerd"
+    # Number of characters in description
+    description = "130"
 
-  [[params.homepage.social.icons]]
-    website = "linkedin"
-    url = "https://www.linkedin.com/company/afkanerd/"
- 
-  [[params.homepage.social.icons]]
-    website = "github"
-    url = "https://github.com/Afkanerd"
+  [params.widgets]
+    # Display widgets
+    display = true
 
- 
+    # Order of widgets to display
+    widgets = ["search", "archive", "category", "tags", "recent"]
 
-[[menu.main]]
-  name = "About"
-  url = "/about"
+# If you're using Yandex.Metrica, you can enable this feature.
+#[params.analytics.yandexmetrica]
+#    enabled = true
+#    tagNumber = ''
 
-[build]
-  writeStats = true
+[menu]
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
 
-# syntax highlight settings
-[markup]
-  [markup.highlight]
-    style = "dracula"
-  [markup.goldmark.renderer]
-    # Enable to include inline HTML
-    unsafe = true
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+archive = "archives"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
