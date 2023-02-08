@@ -5,7 +5,7 @@ image: "/index.jpeg"
 draft: false
 date: 2023-02-07
 description: "Image Test"
-tags: ["smswithoutborders"]
+tags: ["SWOb"]
 archives: ["2023/07"]
 ---
 
